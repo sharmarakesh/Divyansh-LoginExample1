@@ -1,0 +1,105 @@
+    /*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /*Its changes the box model so that it dosen't add border and padding no longer added*/
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    body {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        line-height: 1.7;
+        padding: 3rem;
+        background-image: url('../img/body-img2.jpg');
+        background-size: cover;
+        background-position: top;
+        color: #fff;
+    }
+    
+    .login-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50rem;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 4rem;
+        /* border: 10px solid rgba(0, 0, 0, 0.473);*/
+        border-radius: 10px;
+        box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, .5);
+    }
+    
+    h2 {
+        padding: 0 0 20px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    .login-box .input-box {
+        position: relative;
+    }
+    
+    .login-box .input-box input {
+        width: 100%;
+        padding: 1.5rem 0;
+        letter-spacing: .2rem;
+        font-size: 1.6rem;
+        color: #fff;
+        margin-bottom: 3rem;
+        border: none;
+        border-bottom: 2px solid #fff;
+        outline: none;
+        background: transparent;
+    }
+    
+    .login-box .input-box label {
+        position: absolute;
+        top: -.5rem;
+        left: 0;
+        padding: 1.5rem 0;
+        font-size: 1.6rem;
+        color: #fff;
+        pointer-events: none;
+        transition: .2s;
+    }
+    
+    .login-box .input-box input:focus~label,
+    .login-box .input-box input:valid~label {
+        top: -2.5rem;
+        left: 0;
+        color: #03a9f4;
+        font-size: 1.2rem;
+    }
+    
+    .login-box input[type="submit"] {
+        background: transparent;
+        border: none;
+        border-left: 15px solid #03a9f4;
+        border-right: 15px solid #03a9f4;
+        outline: none;
+        color: #fff;
+        background: #03a9f4;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        border-radius: .5rem;
+        transition: all .2s;
+    }
+    
+    .login-box input[type="submit"]:hover {
+        border-left: 30px solid #2c00ccc4;
+    }
